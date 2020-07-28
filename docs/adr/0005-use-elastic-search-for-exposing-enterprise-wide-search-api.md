@@ -1,4 +1,5 @@
-# 5. Use Elastic Search for exposing enterprise wide search API
+# 5. Use Elastic Search for free text search of Product
+
 
 Date: 2020-07-28
 
@@ -16,11 +17,13 @@ There are options like ElasticSearch or Solr where data can be replicated.
 
 ## Decision
 
-Use ElasticSearch for data indexing
+Use ElasticSearch for data indexing.
+* RDBMS is not suitable for free text searches. Performance is bad when we do such searches.
+* Team has good knowledge of Elastic Search than Solr.
 
 ## Consequences
 
 Data needs to be replicated across the ElasticSearch cluster. This separate cluster needs proper maintenance.
 
-    Near-real time data replication is required.
-    Additional cost of maintaining the ElasticSearch environments
+* Near-real time data replication is required.
+* Additional cost of maintaining the ElasticSearch environments

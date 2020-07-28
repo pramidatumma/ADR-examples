@@ -12,7 +12,10 @@ The Integration tests are crrently using Postgres database in system. Developers
 
 ## Decision
 
-Start using H2 DB for integration tests.
+Start using H2 DB for integration tests because:
+1. It runs in-memory
+2. The Docker need not have Postgres. So, it makes it lightweight
+3. H2 supports all the fields currently being used in Postgres DB
 
 ## Consequences
 
