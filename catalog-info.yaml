@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ADR-examples
+  description: Examples to explain about ADRs
+spec:
+  type: library
+  lifecycle: production
+  owner: Pramida
